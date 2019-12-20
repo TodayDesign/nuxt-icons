@@ -21,7 +21,7 @@ const icons: Module = function () {
     const urlLoader = config.module.rules.find(rule => rule.use && rule.use.find(r => r.loader === 'url-loader'))
     if (urlLoader) {
       urlLoader.exclude = [
-        path.resolve(__dirname, '../../../../assets/icons/')
+        path.resolve(__dirname, '../../../assets/icons/')
       ]
     }
     config.module.rules.push({
@@ -31,7 +31,7 @@ const icons: Module = function () {
         minimize: true
       },
       include: [
-        path.resolve(__dirname, '../../../../assets/icons/')
+        path.resolve(__dirname, '../../../assets/icons/')
       ]
     })
   })
