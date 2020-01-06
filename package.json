@@ -2,7 +2,7 @@
   "name": "icons",
   "version": "0.1.0",
   "description": "",
-  "main": "./lib/module.ts",
+  "main": "./lib/module.js",
   "dependencies": {
     "html-loader": "^0.5.5"
   },
